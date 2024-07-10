@@ -1,0 +1,51 @@
+JavaScript Programming Day01
+
+Topics:
+    Installations & Setups
+    Variables
+    Operators
+    If Statements
+    Loops
+    Arrays
+    String
+
+Extensions:
+    Material Icon Theme
+    Code Runner
+    Prettier - Code formatter
+    JavaScript (ES6) code snippets
+    npm Intellisense
+    Playwright Test for VSCode
+    Playwright Snippets
+    Playwright Test Snippets
+    Tabnine
+
+
+Prompt Engineering Tool:
+    https://www.perplexity.ai/
+
+Accounts:
+    Perplexity AI
+    Tabnine Account
+
+
+shortcuts:
+    output:
+        upwrap:
+            Mac: option + z
+            Windows: alt + z
+    Format:
+        Mac: option + shift + F
+        Windows: alt + shift + F
+
+
+Week1:
+    JavaScript (7 hours)
+
+Week2, 3, 4:
+    Playwright fundamentals (21 hours)
+
+Week5:
+    Project implemntation 
+
+Additional: 1~2 hours live class for typescript
