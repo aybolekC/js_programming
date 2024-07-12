@@ -52,3 +52,19 @@ console.log(result);
 
 console.log('-----------------------------------------------------------');
 
+// nested if
+
+score=80;
+
+if (score>=0 && score<=100) {
+
+    //pass or fail
+    if (score>=60) {
+        console.log('Passed');
+    } else {
+        console.log('Failed');
+    }
+} else {
+    console.log('Invalid');
+}
+
