@@ -97,4 +97,29 @@ console.log("Sorted numbers: ", unsortedNumbers);
 
 console.log('-----------------------------------------------------------------------------------------');
 
+/*
+create a class named Item with the following requirements:
+    attributes:
+        name, price, quantity
 
+    methods:
+        constructor: to initialize the attributes
+        calculateTotalPrice: to calculate the total price of the item by multiplying the price and quantity
+        toString: 
+        */
+       
+class Item {
+    constructor(name, price, quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+    
+    calculateTotalPrice() {
+        return this.price * this.quantity;
+    }
+    
+    toString() {
+        return `Name: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}, Total Price: ${this.calculateTotalPrice()}`;
+    }}
+    
