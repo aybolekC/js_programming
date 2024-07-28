@@ -1,15 +1,3 @@
-
-/*
-create a custom class for Product with the following requirements:
-    Attributes: name, price, quantity, description, productId
-
-
-    actions:
-        constructor: to initialize the attributes
-        displayProductInfo: to display the product's information in the console
-    
-
-*/
 /**
  * Represents a product with attributes such as name, price, quantity, description, and productId.
  *
@@ -46,28 +34,25 @@ class Product {
     }
 }
 
-//test the product object
-
+// Test the product object
 let product1 = new Product("Shirt", 25.99, 100, "A comfortable shirt for everyday wear", "P001");
 product1.displayProductInfo();
 
 let product2 = new Product("Pants", 45.99, 50, "Comfortable pants for everyday wear", "P002");
 product2.displayProductInfo();
 
-
 console.log('----------------------------------------------------------------');
 
 /**
- * create a parent class Animal with the following attributes:
- * attributes: name, age, gender, breed
- * 
- * actions:
- *  constructor: to initialize the attributes
- * eat: to displays name +'is eating'
- * sleep: to displays name +'is sleeping'
- * 
+ * Represents an animal with attributes such as name, age, gender, and breed.
+ *
+ * @class Animal
+ * @constructor
+ * @param {string} name - The name of the animal.
+ * @param {number} age - The age of the animal.
+ * @param {string} gender - The gender of the animal.
+ * @param {string} breed - The breed of the animal.
  */
-
 class Animal {
     constructor(name, age, gender, breed) {
         this.name = name;
@@ -76,35 +61,79 @@ class Animal {
         this.breed = breed;
     }
 
+    /**
+     * Displays a message indicating that the animal is eating.
+     *
+     * @method eat
+     * @memberof Animal
+     * @returns {void}
+     */
     eat() {
         console.log(`${this.name} is eating`);
     }
-    
+
+    /**
+     * Displays a message indicating that the animal is sleeping.
+     *
+     * @method sleep
+     * @memberof Animal
+     * @returns {void}
+     */
     sleep() {
         console.log(`${this.name} is sleeping`);
     }
 }
 
 /**
- * create the following child classes of Animal with the following requirements
- * 
- *      Dog class:
-    *     Additional actions:
-    *                   bark: to displays name +'is barking'
-    * 
-    * Cat class:
-    * Additional actions:
-    *    Meow: to displays name +'is meowing'
+ * Represents a dog, which is a child class of Animal.
+ *
+ * @class Dog
+ * @extends Animal
+ * @constructor
+ * @param {string} name - The name of the dog.
+ * @param {number} age - The age of the dog.
+ * @param {string} gender - The gender of the dog.
+ * @param {string} breed - The breed of the dog.
+ * @param {string} color - The color of the dog.
  */
-
 class Dog extends Animal {
-
-    //add unique instance variable named color
     constructor(name, age, gender, breed, color) {
         super(name, age, gender, breed);
         this.color = color;
     }
+
+    /**
+     * Displays a message indicating that the dog is barking.
+     *
+     * @method bark
+     * @memberof Dog
+     * @returns {void}
+     */
     bark() {
         console.log(`${this.name} is barking`);
+    }
+}
+
+/**
+ * Represents a cat, which is a child class of Animal.
+ *
+ * @class Cat
+ * @extends Animal
+ * @constructor
+ * @param {string} name - The name of the cat.
+ * @param {number} age - The age of the cat.
+ * @param {string} gender - The gender of the cat.
+ * @param {string} breed - The breed of the cat.
+ */
+class Cat extends Animal {
+    /**
+     * Displays a message indicating that the cat is meowing.
+     *
+     * @method meow
+     * @memberof Cat
+     * @returns {void}
+     */
+    meow() {
+        console.log(`${this.name} is meowing`);
     }
 }
